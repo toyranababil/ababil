@@ -1,0 +1,291 @@
+e<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library management system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #background{
+    min-height: 40px;
+    width: 100%;
+    background-image: url('image.jpg');
+    background-size:contain;
+    background-repeat:initial;
+   
+}
+       
+#menu{
+    height: 80px;
+    width: 100%;
+    padding: auto;
+    
+   
+}
+#logo{
+    height: 80px;
+    width: 40%;
+    background:white;
+    padding: auto;
+    text-align: center;
+    line-height: 65px;
+    font-size: 60px;
+    font-family: fantasy;
+    text-shadow: 3px 3px 5px #0b0a0a;
+    float: left;
+
+    
+
+}
+#menu1{
+    height: 80px;
+    width: 60%;
+    background:white;
+    padding: auto;
+    top: 30%;
+    left: 70%;
+    float: right;
+    margin-bottom:10px;
+    text-align: left;
+}
+
+#menu1 UL{
+    list-style:none;
+    padding-left:auto;
+    box-sizing: border-box;
+    
+    margin: 0;
+    
+}
+#menu1 LI{
+    height: 45px;
+    width: 130px;
+    list-style: armenian;
+    padding:auto;
+    margin: 0;
+  margin-bottom: 10px;
+  border: 2px solid #2c7ad6;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #444343;
+    text-align: center ; 
+    display: inline-block; 
+    line-height: 45px;
+    transform: translateY(14px);
+   
+    color: black;
+    font-size: 20px;
+    
+   
+}
+#menu1 LI:hover{
+    background: #2c7ad6;  
+    color: rgb(244, 240, 240); 
+    transition: all ease cubic-bezier(0.215, 0.610, 0.355, 1);
+    border-radius: 3px;
+    text-shadow:3px 3px 5px #0f0303;
+}
+
+#slider{
+    height:500px;
+    
+    background-size:cover;
+    background-attachment: fixed;
+    animation-name:slider;
+    animation-duration: 20s;
+    animation-iteration-count:infinite ;
+   animation-delay: 3s;
+}
+
+@keyframes slider{
+   
+    0% { background-image: url('image.jpg'); }
+    25% { background-image: url('image1.jpg'); }
+    50% { background-image: url('image2.jpg'); }
+    75% { background-image: url('image3.jpg'); }
+    100% { background-image: url('image.jpg'); }
+}
+
+
+
+#l{
+height:400px;
+width: 30%;
+background:rgba(8, 169, 202, 0.6); 
+float: left; 
+margin: 30px;
+border-radius: 7px ;
+transform: translateX(400px);
+
+}
+#l:hover{
+background:linear-gradient(45deg,rgba(50,177,40, .6),rgba(255,255,255, .6));
+}
+
+
+#student{
+margin:50px 50px;
+color:blue;
+
+}
+#Teacher{
+margin:50px 50px;
+color:white;
+}
+.t{
+height: 40px;
+width: 100%;
+border: 2px solid green;
+border-radius: 4px;
+box-sizing: border-box;
+margin-bottom: 15px;
+float:auto;
+
+}
+container{
+	max-width: auto;
+	margin:auto;
+   
+    
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    background-size: 300px;
+    max-height:100px;
+    transform: translateY(-600px);
+    
+   
+   
+}
+.footer-col{
+   width: 200px;
+   padding: auto;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ded5d5;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display:auto;
+	height: 30px;
+	width: 30px;
+	background-color: rgba(239, 232, 232, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #f3e4e4;
+	transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="menu">
+            <div id="logo"><b style="color: rgb(245, 7, 7);">E-<b style="color:#2c7ad6 ;">LIBRARY</b>
+            </div>
+            <div id="menu1">
+                <ul>
+                    <a href="Project.html"><li class="fa fa-home">Home</li></a>
+                    <a href="#"><li class="fa fa-book">Book Corner</li></a>
+                    <a href="admin.html"><li class="fa fa-user">Admin Login</li></a>
+                    <a href="register.html"><li class="fa fa-registered">Register</li></a>
+                    <a href="Project.html"><li class="fa fa-user">Login</li></a>
+
+                </ul>
+            </div>   
+        </div>
+ 
+            <div id="y">
+                <div id="l">
+                    <h1 style=" text-align: center; color: #2c7ad6;">REGISTER</h1>
+                    <div id="student">
+                            USER NAME <br><input type="text" class="t"/><br>
+                            PASSWORD <br><input type="text"class="t"/><br>
+                            RE-PASSWORD <br><input type="text"class="t"/><br>
+                            <a href=""><input type="submit" value="SAVE" style="border: none;width: 50%; height: 30px; background-color: #2c7ad6;"></a>
+                            <a href="#" style="color:blue; text-decoration: none;"><p >forget password</p></a>
+                    </div>
+                </div>
+            </div> 
+          
+        </div>
+        <div id="footer">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4 a href="#"style="text-align:right;margin:10px;padding:7px;float:left">about us</a></h>
+                        </div>
+                        <div class="footer-col">
+                            <h4 style="margin:20px;float:center">Contact Us</h4>     
+                        </div>
+                        <div class="footer-col">
+                            <h4 style="text-align:right;float:right">follow us</h4>
+                            <div style="align-items: right;" class="social-links">
+                                <a href="#" class="fa fa-facebook" style="text-decoration:none; padding:5px; float:right; color: white;"></a>
+                                <a href="#" class="fa fa-instagram" style="text-decoration:none; padding:5px; float:right; color: white;"></a>
+                                <a href="#" class="fa fa-twitter" style="text-decoration:none;  padding: 5px ; float:right; color: white;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </footer>
+        
+</body>
+</html>
